@@ -25,9 +25,10 @@ Jeder dieser Vergleiche ergibt entweder Wahr (true) oder Falsch (false).
 </ul>
 Achtung: Bei Java ist es nicht möglich Zeichenketten zu vergleichen.
 Hierfür muss die equals()-Methode verwendet werden.
+
 ```JAVA
- "abc".equals("abc") (true)
- "abc".equals("123") (false)
+    "abc".equals("abc") (true)
+    "abc".equals("123") (false)
 ```
 
 ### Verknüpfungen mit UND und ODER (Kurzschluss-Operatoren)
@@ -49,7 +50,7 @@ nicht ausgeführt!
 
 ### Beispiel
 ```JAVA
- int a = 0, b = 1, c = 2;
- if (a < b && b < c) { ... } // beide Prüfungen werden ausgeführt
- if (a > b && b > c) { ... } // b > c wird nicht ausgeführt
+    int a = 0, b = 1, c = 2;
+    if (a < b && b < c) { ... } // beide Prüfungen werden ausgeführt
+    if (a > b && b > c) { ... } // b > c wird nicht ausgeführt
 ```
