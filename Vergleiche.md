@@ -44,7 +44,7 @@ Die Operatoren && (und) und || (oder) werden benutzt um mehrere Vergleiche durch
 </ul>
 Bei den mit einem Asterisk markierten Verknüpfungen wird die zweite Prüfung
 nicht ausgeführt!
-s
+
 ### Beispiel
  int a = 0, b = 1, c = 2;
  if (a < b && b < c) { ... } // beide Prüfungen werden ausgeführt
