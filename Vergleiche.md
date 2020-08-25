@@ -28,18 +28,23 @@ Hierfür muss die equals()-Methode verwendet werden.
  "abc".equals("abc") (true)
  "abc".equals("123") (false)
 
-### Verknüpfungen mit UND und ODER
+### Verknüpfungen mit UND und ODER (Kurzschluss-Operatoren)
+Die Operatoren && (und) und || (oder) werden benutzt um mehrere Vergleiche durchzuführen. Dabei handelt es sich um sog. Kurzschluss-Operatoren, die evtl. nicht alle Operationen ausführen. Der Fall false && true führt nur den ersten Vergleich aus, danach steht bereits fest, dass das Ergebnis false sein muss. Der zweite Vergleich (z. B. ein Funktionsaufruf) wird übersprungen.
 <ul>
 <li>true && true (true)</li>
 <li>true && false (false)</li>
-<li>false && true (false)*</li>
-<li>false && false (false)*</li>
+<li>false && true* (false)</li>
+<li>false && false* (false)</li>
 </ul>
 <ul>
-<li>true || true (true)*</li>
-<li>true || false (true)*</li>
+<li>true || true* (true)</li>
+<li>true || false* (true)</li>
 <li>false || true (true)</li>
 <li>false || false (false)</li>
 </ul>
 Bei den mit einem Asterisk markierten Verknüpfungen wird die zweite Prüfung
 nicht ausgeführt!
+### Beispiel
+ int a = 0, b = 1, c = 2;
+ if (a < b && b < c) { ... } // beide Prüfungen werden ausgeführt
+ if (a > b && b > c) { ... } // b > c wird nicht ausgeführt
