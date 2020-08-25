@@ -6,7 +6,7 @@ Dieser kann nur die Werte "True" oder "False" annehmen.
 Es gibt sechs verschiedene Möglichkeiten Werte zu vergleichen:
 * == Gleich
 * != Ungleich
-* > Größer als
+* \> Größer als
 * < Kleiner als
-* >= Größer oder Gleich
+* \>= Größer oder Gleich
 * <= Kleiner oder Gleich
