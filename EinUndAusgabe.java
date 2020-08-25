@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class EinUndAusgabe {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner();
+        Scanner scanner = new Scanner(System.in);
         String eingabe;
 
         System.out.print("Text oder Variable!!!   ");

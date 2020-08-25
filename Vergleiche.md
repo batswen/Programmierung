@@ -24,3 +24,22 @@ Jeder dieser Vergleiche ergibt entweder Wahr (true) oder Falsch (false).
 <li>8 > 5 (true)</li>
 </ul>
 Achtung: Bei Java ist es nicht möglich Zeichenketten zu vergleichen.
+Hierfür muss die equals()-Methode verwendet werden.
+ "abc".equals("abc") (true)
+ "abc".equals("123") (false)
+
+### Verknüpfungen mit UND und ODER
+<ul>
+<li>true && true (true)</li>
+<li>true && false (false)</li>
+<li>false && true (false)*</li>
+<li>false && false (false)*</li>
+</ul>
+<ul>
+<li>true || true (true)*</li>
+<li>true || false (true)*</li>
+<li>false || true (true)</li>
+<li>false || false (false)</li>
+</ul>
+Bei den mit einem Asterisk markierten Verknüpfungen wird die zweite Prüfung
+nicht ausgeführt!
