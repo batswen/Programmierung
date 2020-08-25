@@ -10,3 +10,11 @@ Es gibt sechs verschiedene Möglichkeiten Werte zu vergleichen:
 * < Kleiner als
 * \>= Größer oder Gleich
 * <= Kleiner oder Gleich
+Jeder dieser Vergleiche ergibt entweder Wahr (true) oder Falsch (false).
+### Beispiele
+* 1 < 3 (true)
+* 'a' < 'z' (true)
+* 3 == 5 (false)
+* 3 != 5 (true)
+* 3 > 5 (false)
+* 8 > 5 (true)
