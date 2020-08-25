@@ -7,9 +7,9 @@ Es gibt sechs verschiedene Möglichkeiten Werte zu vergleichen:
 <ul>
 <li>== Gleich</li>
 <li>!= Ungleich</li>
-<li>\> Größer als</li>
+<li>&gt; Größer als</li>
 <li>< Kleiner als</li>
-<li>\>= Größer oder Gleich</li>
+<li>&gt;= Größer oder Gleich</li>
 <li><= Kleiner oder Gleich</li>
 </ul>
 Jeder dieser Vergleiche ergibt entweder Wahr (true) oder Falsch (false).
