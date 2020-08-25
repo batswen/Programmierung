@@ -50,7 +50,6 @@ nicht ausgeführt!
 
 ### Beispiel
 ```JAVA
-    int a = 0, b = 1, c = 2;
-    if (a < b && b < c) { ... } // beide Prüfungen werden ausgeführt
-    if (a > b && b > c) { ... } // b > c wird nicht ausgeführt
+    if (0 < 1 && 1 < 2) { ... } // beide Prüfungen werden ausgeführt
+    if (0 > 1 && 1 > 2) { ... } // 1 > 2 wird nicht ausgeführt
 ```
