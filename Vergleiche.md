@@ -13,6 +13,7 @@ Es gibt sechs verschiedene Möglichkeiten Werte zu vergleichen:
 <li><= Kleiner oder Gleich</li>
 </ul>
 Jeder dieser Vergleiche ergibt entweder Wahr (true) oder Falsch (false).
+
 ### Beispiele
 <ul>
 <li>1 < 3 (true)</li>
