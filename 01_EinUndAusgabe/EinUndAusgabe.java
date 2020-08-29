@@ -14,3 +14,14 @@ public class EinUndAusgabe {
         System.out.printf("Sie haben %s geschrieben!\n", eingabe);
     }
 }
+
+/*
+    Die Scanner-Klasse bietet verschiedene Methoden an:
+        .nextLine()     (String)
+        .nextInt()      (Int)
+        .nextFloat()    (Float)
+        .nextDouble()   (Double)
+        .nextBoolean()
+        .nextLong()
+        .nextShort()
+*/
