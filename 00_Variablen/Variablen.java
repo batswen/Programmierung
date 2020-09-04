@@ -1,11 +1,14 @@
 public class Variablen {
     public static void main(String[] args) {
-        int a, b = 0;
+        int a, b = 0;           // nur b erhält den Wert Null, a ist nicht definiert
         float komma = 123.456f; // Kommazahlen im Quelltext sind immer Double!
         double zahl = 123.456;
         String text = "Beliebig langer Text";
         char c = '?';
         boolean richtig = true;
+
+        int[] zahlen = {15, 20, 0, -5, 100};
+        int ersteZahl = zahlen[0];
     }
 }
 

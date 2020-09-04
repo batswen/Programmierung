@@ -12,9 +12,14 @@ for (initialisierung; bedingung; iteration) {
     ...
 }
 
+## FOREACH
+for (singular: plural) {
+
+}
 
 
-###
+
+### Vergleich von WHILE und FOR
 ```JAVA
 // ForSchleife.java
 public class ForSchleife {
