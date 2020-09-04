@@ -121,11 +121,11 @@ ergebnis = ++i; // zuerst wird i um Eins erhöht, danach erfolgt die Zuweisung
 i = 5;
 System.out.println("i = " + i);      // Ausgabe: i = 5
 
-System.out.println("i++ " + i++);    // Ausgabe: 5  Inhalt von i: 6
+System.out.println("i++ " + i++);    // Ausgabe: i = 5
 
 System.out.println("i = " + i);      // Ausgabe: i = 6
 
-System.out.println("++i " + ++i);    // Ausgabe: 7  Inhalt von i: 7
+System.out.println("++i " + ++i);    // Ausgabe: i = 7
 
 System.out.println("i = " + i);      // Ausgabe: i = 7
 
