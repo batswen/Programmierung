@@ -84,6 +84,9 @@ class TestTesten {
 ```JAVA
 class Tier {
     public String name;
+    public Tier(String name) {
+        this.name = name;
+    }
     public void gibLaut() {
         System.out.println(this.name + " macht ein typisches Geräusch.");
     }
@@ -91,6 +94,10 @@ class Tier {
 
 // Jeder Hund ist auch ein Tier
 class Hund extends Tier {
+    // Der Konstruktor wird nicht vererbt
+    public Hund(String name) {
+        this.name = name;
+    }
     // Ersetzen (Überladen) der Methode gibLaut()
     @Override
     public void gibLaut() {
@@ -100,13 +107,13 @@ class Hund extends Tier {
 
 class TierTesten {
     //...
-    Tier tier = new Tier();
+    Tier tier = new Tier("Eidechse Lukas");
     tier.gibLaut();
 
-    Hund hund1 = new Hund();
+    Hund hund1 = new Hund("Bello");
     hund1.gibLaut();
 
-    Tier hund2 = new Hund();
+    Tier hund2 = new Hund("Hasso");
     hund2.gibLaut();
     //...
 }
