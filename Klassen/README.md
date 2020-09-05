@@ -12,7 +12,7 @@ class [name] {
 Die Klasse Test enthält ein Attribut (String name)
 ```JAVA
 class Test {
-    String name;
+    public String name;
 }
 
 // Erzeugen von drei Objekten
@@ -43,23 +43,24 @@ class TestTesten {
 ## Methoden
 Eine Methode ist eine Funktion, die einem Objekt zugeordnet wird.
 
-Beim Erzeugen eines Objektes mit Hilfe von new wird immer eine Methode, der Konstruktor, aufgerufen. Der Konstruktor muss den selben Namen wie die Klasse erhalten.
+Beim Erzeugen eines Objektes mit Hilfe von new wird immer eine Methode, Konstruktor genannt, aufgerufen. Der Konstruktor muss denselben Namen wie die Klasse erhalten. Ist kein Konstruktor definiert wird vom Compiler ein Standardkonstruktor hinzugefügt.
 
 this. ist ein Platzhalter für das Objekt.
 ```JAVA
 class Test {
     // zahl ist ein Attribut der Klasse Test
-    public int zahl;
+    public String name;
 
     // Test() ist der Konstruktor
-    public Test() {
-        this.zahl = 0;
+    // Konstruktor dürfen keinen Rückgabetyp erhalten
+    public Test(String name) {
+        this.name = name;
     }
 
-    // weiterzählen() ist eine Methode (kein static) der Testklasse
+    // grüßen() ist eine Methode (kein static) der Testklasse
     // Methoden können nur auf ein Objekt angewendet werden
-    public weiterzählen() {
-        this.zahl++;
+    public void grüßen() {
+        System.out.println("Hallo " + this.name);
     }
 }
 ```
@@ -68,13 +69,13 @@ class Test {
 ```JAVA
 class TestTesten {
     //...
-    Test test = new Test();
-    test.weiterzählen();
-    test.weiterzählen();
-    test.weiterzählen();
+    Test test = new Test("Hans Wurst");
+    test.grüßen();
+    test.grüßen();
+    test.grüßen();
 
     Test anderesObjekt;
-    anderesObjekt = new Test();
+    anderesObjekt = new Test("Susi Sorglos");
     //...
 }
 ```
@@ -83,7 +84,7 @@ class TestTesten {
 ```JAVA
 class Tier {
     public String name;
-    public gibLaut() {
+    public void gibLaut() {
         System.out.println(this.name + " macht ein typisches Geräusch.");
     }
 }
@@ -92,7 +93,7 @@ class Tier {
 class Hund extends Tier {
     // Ersetzen (Überladen) der Methode gibLaut()
     @Override
-    public gibLaut() {
+    public void gibLaut() {
         System.out.println(this.name + " bellt.");
     }
 }
@@ -113,7 +114,7 @@ class TierTesten {
 
 ## Sichtbarkeit
 Gilt für Klassen, Attribute und Methoden
-* public
-* private
-* protected
-* (package)
+* public        Ausserhalb der Klasse sichtbar
+* private       Nur innerhalb der Klasse sichtbar
+* protected     Wie private, wird jedoch vererbt
+* (package)     Innerhalb eines Packages sichtbar
