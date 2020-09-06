@@ -90,9 +90,9 @@ System.out.println(1.11111111111111111);    // Ausgabe: 1.1111111111111112
 ## Weitere Operatoren
 Für die normalen Rechenoperatoren gibt es Kurzschreibweisen
 ```JAVA
-    a += b; // bzw -= *= /= %= <<= >>=
+a += b; // bzw -= *= /= %= <<= >>=
 // ist kurz für
-    a = a + b; // bzw - * / ...
+a = a + b; // bzw - * / ...
 ```
 
 ### Beispiel

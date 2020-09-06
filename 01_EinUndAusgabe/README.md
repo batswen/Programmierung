@@ -8,6 +8,7 @@ System.out.println();   // Gibt zusätzlich einen Zeilenvorschub aus
 System.out.printf();    // Erlaubt es die Ausgabe zu formatieren
 ```
 
+Bei Python kann man für jeden dieser Fälle die print()-Funktion verwenden.
 ```PYTHON
 print(end="")   # Gibt nur die angegebenen Daten aus
 print()         # Gibt zusätzlich einen Zeilenvorschub aus
