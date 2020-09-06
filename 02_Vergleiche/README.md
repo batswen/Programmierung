@@ -34,15 +34,15 @@ Hierfür muss die equals()-Methode verwendet werden.
 Die Operatoren && (Python: and) und || (Python: or) werden benutzt um mehrere Vergleiche durchzuführen. Dabei handelt es sich um sog. Kurzschluss-Operatoren, die evtl. nicht alle Operationen ausführen. Der Fall false && true führt nur den ersten Vergleich aus, danach steht bereits fest, dass das Ergebnis false sein muss. Der zweite Vergleich (z. B. ein Funktionsaufruf) wird übersprungen.
 
 Java
-
 <ul>
 <li>true && true (true)</li>
 <li>true && false (false)</li>
 <li>false && true* (false)</li>
 <li>false && false* (false)</li>
+</ul>
 
 Python
-
+<ul>
 <li>True and True (True)</li>
 <li>True and False (False)</li>
 <li>False and True* (False)</li>
@@ -51,14 +51,15 @@ Python
 <ul>
 
 Java
-
+<ul>
 <li>true || true* (true)</li>
 <li>true || false* (true)</li>
 <li>false || true (true)</li>
 <li>false || false (false)</li>
+</ul>
 
 Python
-
+<ul>
 <li>True or True (True)</li>
 <li>True or False (False)</li>
 <li>False or True* (False)</li>
