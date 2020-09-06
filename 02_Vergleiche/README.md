@@ -48,7 +48,6 @@ Python
 <li>False and True* (False)</li>
 <li>False and False* (False)</li>
 </ul>
-<ul>
 
 Java
 <ul>
