@@ -11,7 +11,7 @@ public class While {
         /*
         boolean weiter = true;
         while (weiter) {
-            System.out.println("Endlosschleife")
+            System.out.println("Endlosschleife");
         }
         */
     }

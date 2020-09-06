@@ -26,8 +26,9 @@ Achtung: Bei Java ist es nicht möglich Zeichenketten zu vergleichen.
 Hierfür muss die equals()-Methode verwendet werden.
 
 ```JAVA
-    "abc".equals("abc") (true)
-    "abc".equals("123") (false)
+// Java
+"abc".equals("abc") (true)
+"abc".equals("123") (false)
 ```
 
 ## Verknüpfungen mit UND und ODER (Kurzschluss-Operatoren)
@@ -69,11 +70,13 @@ nicht ausgeführt!
 
 ### Beispiel
 ```JAVA
+// Java
 if (0 < 1 && 1 < 2) { ... } // beide Prüfungen werden ausgeführt
 if (0 > 1 && 1 > 2) { ... } // 1 > 2 wird nicht ausgeführt
 ```
 
 ```PYTHON
+# Python
 if 0 < 1 and 1 < 1: # beide Prüfungen werden ausgeführt
 if 0 > 1 and 1 > 2: # 1 > 2 wird nicht ausgeführt
 ```
@@ -83,11 +86,13 @@ Der Nicht-Operator kehrt den Wahrheitswert um, d. h. !true => false und !false =
 
 ### Beispiel
 ```JAVA
+// Java
 if (!false) { ... } // Die Anweisungen werden ausgeführt
 if (!true) { ... }  // Nur ein ELSE-Zweig wird ausgeführt
 ```
 
 ```PYTHON
+# Python
 if not False: # Die Anweisungen werden ausgeführt
 if not True:  # Nur ein ELSE-Zweig wird ausgeführt
 ```

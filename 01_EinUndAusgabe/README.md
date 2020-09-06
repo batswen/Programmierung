@@ -3,6 +3,7 @@
 ## Ausgabe in die Konsole
 Die Ausgabe geschieht mit Hilfe von System.out.print / printf / println.
 ```JAVA
+/7 Java
 System.out.print();     // Gibt nur die angegebenen Daten aus
 System.out.println();   // Gibt zusätzlich einen Zeilenvorschub aus
 System.out.printf();    // Erlaubt es die Ausgabe zu formatieren
