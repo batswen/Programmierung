@@ -8,6 +8,10 @@ System.out.println();   // Gibt zusätzlich einen Zeilenvorschub aus
 System.out.printf();    // Erlaubt es die Ausgabe zu formatieren
 ```
 
+```PYTHON
+print(end="")   # Gibt nur die angegebenen Daten aus
+print()         # Gibt zusätzlich einen Zeilenvorschub aus
+```
 ## Eingabe
 Um Eingaben von der Konsole zu lesen, kann die Scanner-Klasse verwendet werden.
 ```JAVA
@@ -30,4 +34,8 @@ String eingabe = scanner.nextLine();
         .nextLong()     (Long)
         .nextShort()    (Short)
 */
+```
+
+```PYTHON
+eingabe = input("Eingabe: ")
 ```

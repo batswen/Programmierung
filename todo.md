@@ -8,3 +8,7 @@ this()
 ### Sichtbarkeit
 ### Vererbung
 super
+
+package
+final
+naming conventions

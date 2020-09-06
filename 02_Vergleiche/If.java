@@ -65,6 +65,6 @@ public class If {
 
         // oder
 
-        System.out.println(password.equals("12345") ? "Richtig!" : "Alarm!");
+        System.out.println(passwort.equals("12345") ? "Richtig!" : "Alarm!");
     }
 }

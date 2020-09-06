@@ -31,26 +31,42 @@ Hierfür muss die equals()-Methode verwendet werden.
 ```
 
 ## Verknüpfungen mit UND und ODER (Kurzschluss-Operatoren)
-Die Operatoren && (und) und || (oder) werden benutzt um mehrere Vergleiche durchzuführen. Dabei handelt es sich um sog. Kurzschluss-Operatoren, die evtl. nicht alle Operationen ausführen. Der Fall false && true führt nur den ersten Vergleich aus, danach steht bereits fest, dass das Ergebnis false sein muss. Der zweite Vergleich (z. B. ein Funktionsaufruf) wird übersprungen.
+Die Operatoren && (Python: and) und || (Python: or) werden benutzt um mehrere Vergleiche durchzuführen. Dabei handelt es sich um sog. Kurzschluss-Operatoren, die evtl. nicht alle Operationen ausführen. Der Fall false && true führt nur den ersten Vergleich aus, danach steht bereits fest, dass das Ergebnis false sein muss. Der zweite Vergleich (z. B. ein Funktionsaufruf) wird übersprungen.
 <ul>
+<li>Java</li>
 <li>true && true (true)</li>
 <li>true && false (false)</li>
 <li>false && true* (false)</li>
 <li>false && false* (false)</li>
+<li>Python</li>
+<li>True and True (True)</li>
+<li>True and False (False)</li>
+<li>False and True* (False)</li>
+<li>False and False* (False)</li>
 </ul>
 <ul>
 <li>true || true* (true)</li>
 <li>true || false* (true)</li>
 <li>false || true (true)</li>
 <li>false || false (false)</li>
+<li>Python</li>
+<li>True or True (True)</li>
+<li>True or False (False)</li>
+<li>False or True* (False)</li>
+<li>False or False* (False)</li>
 </ul>
 Bei den mit einem Asterisk markierten Verknüpfungen wird die zweite Prüfung
 nicht ausgeführt!
 
 ### Beispiel
 ```JAVA
-    if (0 < 1 && 1 < 2) { ... } // beide Prüfungen werden ausgeführt
-    if (0 > 1 && 1 > 2) { ... } // 1 > 2 wird nicht ausgeführt
+if (0 < 1 && 1 < 2) { ... } // beide Prüfungen werden ausgeführt
+if (0 > 1 && 1 > 2) { ... } // 1 > 2 wird nicht ausgeführt
+```
+
+```PYTHON
+if 0 < 1 and 1 < 1: # beide Prüfungen werden ausgeführt
+if 0 > 1 and 1 > 2: # 1 > 2 wird nicht ausgeführt
 ```
 
 ## Nicht
@@ -58,6 +74,11 @@ Der Nicht-Operator kehrt den Wahrheitswert um, d. h. !true => false und !false =
 
 ### Beispiel
 ```JAVA
-    if (!false) { ... } // Die Anweisungen werden ausgeführt
-    if (!true) { ... }  // Nur ein ELSE-Zweig wird ausgeführt
+if (!false) { ... } // Die Anweisungen werden ausgeführt
+if (!true) { ... }  // Nur ein ELSE-Zweig wird ausgeführt
+```
+
+```PYTHON
+if not False: # Die Anweisungen werden ausgeführt
+if not True:  # Nur ein ELSE-Zweig wird ausgeführt
 ```

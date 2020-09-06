@@ -5,7 +5,7 @@ public class For {
             System.out.println("In der While-Schleife, i: " + i);
             i++;
         }
-
+        System.out.println("Nach der While-Schleife, i: " + i);
 
         int j = 0;
         for (; j < 10;) {
