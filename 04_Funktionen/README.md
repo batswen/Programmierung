@@ -78,7 +78,7 @@ public class Kurzschluß {
 # Python
 def eins():
     print("Eins")
-    return True // Ändern in "return False"
+    return True # Ändern in "return False"
 
 def zwei():
     print("Zwei")

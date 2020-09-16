@@ -1,11 +1,14 @@
 # Klassen, Methoden und Objekte
 ## Klassen
 ```
+JAVA:
 class [name] {
     Attribute
     Konstruktor
     Methoden
 }
+Python:
+class [name]:
 ```
 
 ### Beispiel
@@ -40,6 +43,22 @@ class TestTesten {
 * new  = Erzeugt neues Objekt
 * Test() = Aufruf des sog. Konstruktors (Name ist ebenfalls gleich dem Klassennamen)
 
+```PYTHON
+class Test:
+    pass    # Diese Klasse hat noch keinen Inhalt
+# ---
+
+test1 = Test()
+test1.name = "Mark Müller"
+
+test2 = Test()
+test2.name = "Kerstin Meier"
+
+test3 = Test()
+
+print(test1.name)
+```
+
 ## Methoden
 Eine Methode ist eine Funktion, die einem Objekt zugeordnet wird.
 
@@ -48,11 +67,11 @@ Beim Erzeugen eines Objektes mit Hilfe von new wird immer eine Methode, Konstruk
 this. ist ein Platzhalter für das Objekt.
 ```JAVA
 class Test {
-    // zahl ist ein Attribut der Klasse Test
+    // name ist ein Attribut der Klasse Test
     public String name;
 
     // Test() ist der Konstruktor
-    // Konstruktor dürfen keinen Rückgabetyp erhalten
+    // Konstruktoren dürfen keinen Rückgabetyp erhalten
     public Test(String name) {
         this.name = name;
     }
@@ -63,6 +82,20 @@ class Test {
         System.out.println("Hallo " + this.name);
     }
 }
+```
+
+```PYTHON
+class Test:
+    # Eine Auflistung der Attribute ist nicht nötig/möglich
+
+    # __init__() ist der Konstruktor
+    def __init__(self, name): # self (Variable) enthält Referenz auf das Objekt
+        self.name = name
+
+    # grüßen() ist eine Methode der Testklasse
+    # Methoden können nur auf ein Objekt angewendet werden
+    def grüßen(self):
+        print("Hallo {}".format(self.name))
 ```
 
 ## Objekte
@@ -78,6 +111,15 @@ class TestTesten {
     anderesObjekt = new Test("Susi Sorglos");
     //...
 }
+```
+
+```PYTHON
+test = Test("Hans Wurst")
+test.grüßen()
+test.grüßen()
+test.grüßen()
+
+anderesObjekt = Test("Susi Sorglos")
 ```
 
 ## Vererbung
@@ -119,7 +161,35 @@ class TierTesten {
 }
 ```
 
-## Sichtbarkeit
+```PYTHON
+class Tier:
+    def __init__(self, name):
+        self.name = name
+
+    def gibLaut(self):
+        print("{} macht ein typisches Geräusch.".format(self.name))
+
+# Jeder Hund ist auch ein Tier
+class Hund(Tier):
+    # Der Konstruktor wird nicht vererbt
+    def __init__(self, name):
+        self.name = name
+
+    # Ersetzen (Überladen) der Methode gibLaut()
+    def gibLaut(self):
+        print("{} bellt.".format(self.name))
+
+tier = Tier("Eidechse Lukas")
+tier.gibLaut()
+
+hund1 = Hund("Bello")
+hund1.gibLaut()
+
+hund2 = Hund("Hasso")
+hund2.gibLaut()
+```
+
+## Sichtbarkeit (Java)
 Gilt für Klassen, Attribute und Methoden
 * public        Ausserhalb der Klasse sichtbar
 * private       Nur innerhalb der Klasse sichtbar
