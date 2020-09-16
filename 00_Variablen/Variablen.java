@@ -7,6 +7,7 @@ public class Variablen {
         char c = '?';
         boolean richtig = true;
 
+        // Deklaration eines Arrays
         int[] zahlen = {15, 20, 0, -5, 100};
         int ersteZahl = zahlen[0];
     }

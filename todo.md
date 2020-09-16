@@ -9,6 +9,8 @@ this()
 ### Vererbung
 super
 
+abstract/interface
+
 package
 final
 naming conventions
