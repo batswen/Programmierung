@@ -1,23 +1,45 @@
-# Schleifen
+# Schleifen (engl. Loop)
+
+Die Befehle in einer Schleife werden mehrfach ausgeführt.
 
 ## WHILE
+Wird u. U. nicht ausgeführt.
+
+```
 initialisierung
 while (bedingung) {
     ...
     iteration
 }
+```
+
+## DO WHILE
+Wird mindestens einmal ausgeführt.
+
+```
+initialisierung
+do {
+    ...
+    iteration
+} while(bedingung)
+```
 
 ## FOR
+Kurzschreibweise der While-Schleife
+
+```
 for (initialisierung; bedingung; iteration) {
     ...
 }
+```
 
 ## FOREACH
+
+```
 for (singular: plural) {
 
 }
-
-
+```
 
 ### Vergleich von WHILE und FOR
 ```JAVA
