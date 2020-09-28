@@ -1,5 +1,7 @@
 # Klassen, Methoden und Objekte
+
 ## Klassen
+
 ```
 JAVA:
 class [name] {
@@ -9,10 +11,14 @@ class [name] {
 }
 Python:
 class [name]:
+    Konstruktor
+    Methoden
 ```
 
 ### Beispiel
+
 Die Klasse Test enthält ein Attribut (String name)
+
 ```JAVA
 class Test {
     public String name;
@@ -38,7 +44,8 @@ class TestTesten {
     }
 }
 ```
-* Test = Variablentyp (immer identisch mit der Klasse)
+
+* Test = Variablentyp (immer identisch mit der Klasse bzw. Basisklasse)
 * test? = Variable (frei wählbar)
 * new  = Erzeugt neues Objekt
 * Test() = Aufruf des sog. Konstruktors (Name ist ebenfalls gleich dem Klassennamen)
@@ -60,11 +67,13 @@ print(test1.name)
 ```
 
 ## Methoden
+
 Eine Methode ist eine Funktion, die einem Objekt zugeordnet wird.
 
 Beim Erzeugen eines Objektes mit Hilfe von new wird immer eine Methode, Konstruktor genannt, aufgerufen. Der Konstruktor muss denselben Namen wie die Klasse erhalten. Ist kein Konstruktor definiert wird vom Compiler ein Standardkonstruktor hinzugefügt.
 
 this. ist ein Platzhalter für das Objekt.
+
 ```JAVA
 class Test {
     // name ist ein Attribut der Klasse Test
@@ -99,6 +108,9 @@ class Test:
 ```
 
 ## Objekte
+
+Objekte werden aus Klassen (die sozusagen die Blaupause für Objekte darstellen) gebildet.
+
 ```JAVA
 class TestTesten {
     //...
@@ -123,6 +135,9 @@ anderesObjekt = Test("Susi Sorglos")
 ```
 
 ## Vererbung
+
+Bei der Vererbung erhält eine abgeleitete Klasse alle nicht-privaten Attribute und Methoden außer dem Konstruktor.
+
 ```JAVA
 class Tier {
     public String name;
@@ -155,6 +170,7 @@ class TierTesten {
     Hund hund1 = new Hund("Bello");
     hund1.gibLaut();
 
+    // Verwenden der Basisklasse als Variablentyp
     Tier hund2 = new Hund("Hasso");
     hund2.gibLaut();
     //...
@@ -189,9 +205,16 @@ hund2 = Hund("Hasso")
 hund2.gibLaut()
 ```
 
-## Sichtbarkeit (Java)
+## Sichtbarkeit (Java, C++, C#, PHP)
+
+Skriptsprachen wie Javascript oder Python bieten häufig keine Möglichkeit die Sichtbarkeit zu beeinflussen an. PHP ist hier eine Ausnahme.
+
 Gilt für Klassen, Attribute und Methoden
-* public        Ausserhalb der Klasse sichtbar
-* private       Nur innerhalb der Klasse sichtbar
-* protected     Wie private, wird jedoch vererbt
-* (package)     Innerhalb eines Packages sichtbar
+
+|Bezeichnung|Sprache|Erklärung|
+|-|-|-|
+|public|C++, Java, PHP, C#|Ausserhalb der Klasse sichtbar|
+|private|C++, Java, PHP, C#|Nur innerhalb der Klasse sichtbar|
+|protected|C++, Java, PHP, C#|Wie private, wird jedoch vererbt|
+|(package)|Java|Innerhalb eines Packages sichtbar; Schlüsselwort wird nicht angegeben|
+|internal|C#|Innerhalb einer Assembly sichtbar|

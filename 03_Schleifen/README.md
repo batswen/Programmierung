@@ -3,7 +3,8 @@
 Die Befehle in einer Schleife werden mehrfach ausgeführt.
 
 ## WHILE
-Wird u. U. nicht ausgeführt.
+
+Die While-Schleife ist eine der kopfgesteuerten Schleifen, hier wird vor Schleifenbeginn die Bedingung geprüft. Die While-Schleife wird unter Umständen nicht ausgeführt.
 
 ```
 initialisierung
@@ -14,7 +15,8 @@ while (bedingung) {
 ```
 
 ## DO WHILE
-Wird mindestens einmal ausgeführt.
+
+Die Bedingung wird erst nach Abarbeiten des Schleifenrumpfes geprüft, dadurch wird sie mindestens einmal ausgeführt.
 
 ```
 initialisierung
@@ -25,6 +27,7 @@ do {
 ```
 
 ## FOR
+
 Kurzschreibweise der While-Schleife
 
 ```
@@ -34,6 +37,10 @@ for (initialisierung; bedingung; iteration) {
 ```
 
 ## FOREACH
+
+Zur Iteration über Arrays und Zeichenketten kann die Foreach-Schleife verwendet werden. In die "Singular-Variable" werden nacheinander alle Einträge aus dem Array/der Zeichenkette übergeben.
+
+In Python kann auch hierfür die normale For-Schleife verwendet werden.
 
 ```
 for (singular: plural) {
