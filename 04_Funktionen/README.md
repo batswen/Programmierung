@@ -36,6 +36,26 @@ def doppelt(zahl):
 # ...
 i = 1234567
 print("Das Doppelte von {} ist {}".format(zahl, doppelt(zahl)))
+
+# --------
+def benannte_parameter(x, y, z):
+    print(x, y, z)
+
+# Aufruf mit Positionsargumenten
+benannte_parameter(1, 2, 3) # x=1, y=2, z=3
+
+# Aufruf mit benannten Argumenten
+benannte_parameter(x = 3, y = 5, z = 10) # x=3, y=5, z=10
+
+# Aufruf mit benannten Argumenten, beliebige Reihenfolge
+benannte_parameter(z = 3, x = 5, y = 10) # x=5, y=10, z=3
+
+#
+def parameter_mit_vorgabe(x, y = 0):
+    print(x, y)
+
+parameter_mit_vorgabe(1, 2) # x=1, y=2
+parameter_mit_vorgabe(1) # x=1, y=0
 ```
 
 ## Nochmal der Kurzschluß
