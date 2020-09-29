@@ -2,6 +2,9 @@
 
 ## Unterschied Compiler und Interpreter
 
+### Compiler
+### Interpreter
+
 ## Begriffe
 
 #### Algorithmus

@@ -1,5 +1,5 @@
 # Funktionen
-Mit Hilfe von Funktionen können Programme in kleinere, wiederverwertbare Einheiten unterteilt werden.
+Mit Hilfe von Funktionen können Programme in kleinere, wiederverwendbare Einheiten unterteilt werden. Funktionen können lokale Variablen besitzen, diese existieren nur bis die Funktion beendet wird.
 
 ## Funktionsdefinition
 ```JAVA
@@ -55,8 +55,22 @@ def parameter_mit_vorgabe(x, y = 0):
     print(x, y)
 
 parameter_mit_vorgabe(1, 2) # x=1, y=2
-parameter_mit_vorgabe(1) # x=1, y=0
+parameter_mit_vorgabe(1)    # x=1, y=0
+parameter_mit_vorgabe(x = 1)# x=1, y=0
 ```
+
+Funktionen in Python können jeden beliebigen Datentyp zurückgeben. Es sind also auch z. B. Arrays erlaubt. Wird vom Array nur ein bestimmter Index benötigt, so kann man Diesen an den Funktionsaufruf anhängen.
+
+```PYTHON
+def viele_ergebnisse():
+    return [0, "Eins", ["A", "B", "C"], True]
+
+print(viele_ergebnisse())       # [0, 'Eins', ['A', 'B', 'C'], True]
+print(viele_ergebnisse()[0])    # 0
+print(viele_ergebnisse()[2][0]) # A
+```
+
+Vorgabeparameter gibt es seit ES2015 auch bei Javascript. Der Internet Explorer unterstützt diesen Standard nicht.
 
 ## Nochmal der Kurzschluß
 ```JAVA
