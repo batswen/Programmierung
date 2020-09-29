@@ -4,33 +4,37 @@
 
 ## Begriffe
 
-##### Debugger
+#### Algorithmus
+
+Auflistung von Schritten zur Lösung eines Problems.
+
+#### Debugger
 
 Hilft bei der Fehlersuche.
 
-##### Profiler
+#### Profiler
 
 Misst die Laufzeit eines Programmes und kann dadurch helfen Stellen zu finden, die optimiert werden sollten.
 
-##### IDE
+#### IDE
 
 IDE = Integrated Development Environment
 
 Eine Entwicklungsumgebung, um einen Editor herum gebaut. Unterstützt die Entwicklung durch Hilfsprogramme wie z. B. eine Versionverwaltung.
 
-##### Quelltext
+#### Quelltext
 
-Der Quelltext ist der Text, den man in einem Editor oder einer IDE eingibt.
+Der Quelltext ist der Text, den man in einem Editor oder einer IDE eingibt. (Java: Dateiendung .java; Python: Dateiendung egal, üblicherweise .py)
 
-##### Variable
+#### Variable
 
 Ist eine "Stelle" im Arbeitsspeicher, den man beschreiben und auslesen kann. Das Beschreiben geschieht durch eine Zuweisung.
 
-##### Operator
+#### Operator
 
 Operatoren sind Rechenzeichen wie z. B. (`+`, `-`); verschiedene Zuweisungszeichen (`=`, `+=`) oder Bool'sche Verknüpfungen (`&&`).
 
-##### Zuweisung
+#### Zuweisung
 
 Durch eine Zuweisung wird einer Variablen ein Wert übergeben. Hierfür wird für gewöhnlich das `=`-Zeichen verwendet.
 

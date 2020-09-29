@@ -9,6 +9,8 @@ class [name] {
     Konstruktor
     Methoden
 }
+In jedem Quelltext (name.java) darf/muss es eine öffentliche Klasse mit dem selben Namen geben.
+
 Python:
 class [name]:
     Konstruktor
