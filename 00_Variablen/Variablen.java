@@ -10,6 +10,7 @@ public class Variablen {
         // Deklaration eines Arrays
         int[] zahlen = {15, 20, 0, -5, 100};
         int ersteZahl = zahlen[0];
+        int letzteZahl = zahlen[zahlen.length - 1];
     }
 }
 

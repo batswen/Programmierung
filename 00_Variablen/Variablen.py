@@ -7,4 +7,5 @@ text = "Beliebig langer Text"
 richtig = True
 
 zahlen = [15, 20, 0, -5, 100]
-ersteZahl = zahlen[0]
+erste_zahl = zahlen[0]
+letzte_zahl = zahlen[-1]
