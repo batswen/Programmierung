@@ -1,6 +1,7 @@
 # Datentypen
 
 ## Char
+
 Ein einzelnes Zeichen in einfachen Hochkommas (Apostroph). Als Zeichenkodierung wird UTF-16 verwendet, jedes zeichen benötigt zwei Byte Speicerplatz.
 ```
 'a'
@@ -9,6 +10,7 @@ Ein einzelnes Zeichen in einfachen Hochkommas (Apostroph). Als Zeichenkodierung 
 ```
 
 ## String (Zeichenkette)
+
 Beliebige Anzahl an Zeichen in doppelten Anführungszeichen.
 Der String-Datentyp wird durch die String-Klasse erzeugt. Das hat einige Vor- und Nachteile, wie z. B. ist es nicht möglich zwei Zeichenketten durch den ==-Operator zu vergleichen.
 ```
@@ -17,6 +19,7 @@ Der String-Datentyp wird durch die String-Klasse erzeugt. Das hat einige Vor- un
 ```
 
 ## Int / Long / Short / Byte
+
 Integer (immer mit Vorzeichen; Integerzahlen sind immer dann negativ, wenn das höchste Bit Eins ist). An Long-Zahlen im Quelltext, die größer als 32 Bit sind, muss ein 'l' angehängt werden.
 ```JAVA
 long  //(64 Bit, Bereich: -9223372036854775808 bis 9223372036854775807)
@@ -27,16 +30,53 @@ byte  //( 8 Bit, Bereich: -128 bis 127)
 Die Interger-Klasse bietet Funktionen zur Verarbeitung von vorzeichenlosen Zahlen an.
 
 ## Boolean
+
 Wahr oder Falsch
 
 ## Float / Double
+
 Fließkommazahlen im Quelltext werden immer als double betrachtet. Will man ein float schrieben, so muss an die letzte Ziffer ein 'f' angehägt werden (siehe unten).
 ```JAVA
 float  //(32 Bit, Sechs Nachkommastellen)
 double //(64 Bit, Fünfzehn Nachkommastellen)
 ```
 
+## Arrays
+
+Ein Array kann mehrere Daten speichern.
+
+```JAVA
+// Erstellen eines leeren Arrays
+int[] zahlen = new int[10]; // Platz für zehn Zahlen
+zahlen[0] = 0; // Erster Eintrag
+zahlen[9] = 1; // Letzter Eintrag
+
+// Erstellen eines Arrays aus bekannten Daten
+int[] messwerte = {5, 0, -5, 12, 11, 0, 18};
+```
+
+```PYTHON
+# Erstellen eines leeren Arrays
+zahlen = []
+
+# Hionzufügen von Werten
+zahlen.append(15)
+zahlen.append(0)
+zahlen.append(-1)
+
+zahlen[0] = 0 # Erster Eintrag
+zahlen[-1] = 1 # Letzter Eintrag
+
+
+# Erstellen eines Arrays mit Vorgabewerten
+andere_zahlen = [0] * 10 # andere_zahlen = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+# Erstellen eines Arrays aus bekannten Daten
+messwerte = [5, 0, -5, 12, 11, 0, 18]
+```
+
 ## Casting (Wandeln eines Datentyps in einen Anderen)
+
 Kleinere Datentypen können problemlos in größere Datentypen um gewandelt werden, als z. B. short nach int. Short und char können verlustfrei gecastet werden.
 
 ```JAVA
