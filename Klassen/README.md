@@ -63,6 +63,8 @@ test1.name = "Mark Müller"
 test2 = Test()
 test2.name = "Alex Meier"
 
+# Bei Python ist wird der Konstruktor direkt
+# (ohne new) aufgerufen
 test3 = Test()
 
 print(test1.name)
