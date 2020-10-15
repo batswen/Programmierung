@@ -38,7 +38,7 @@ class TestTesten {
         test1.name = "Mark Müller";
 
         Test test2 = new Test();
-        test2.name = "Kerstin Meier";
+        test2.name = "Alex Meier";
 
         Test test3 = new Test();
 
@@ -61,7 +61,7 @@ test1 = Test()
 test1.name = "Mark Müller"
 
 test2 = Test()
-test2.name = "Kerstin Meier"
+test2.name = "Alex Meier"
 
 test3 = Test()
 
@@ -138,9 +138,13 @@ anderesObjekt = Test("Susi Sorglos")
 
 ## Vererbung
 
+Vererbung bedeutet dass eine Klasse die Attribute und Methoden einer anderen Klasse erhält. Das ermöglicht es eine Basisklasse zu entwerfen die bereits alle gemeinsamen Informationen speichern kann. Soll das Erben vehindert werden, so muss die Klasse mit `final` deklariert werden.
+
 Bei der Vererbung erhält eine abgeleitete Klasse alle nicht-privaten Attribute und Methoden außer dem Konstruktor.
 
 ```JAVA
+final class NichtVererbbar {}
+
 class Tier {
     public String name;
     public Tier(String name) {
@@ -206,6 +210,53 @@ hund1.gibLaut()
 hund2 = Hund("Hasso")
 hund2.gibLaut()
 ```
+
+## Abstrakte Klassen und Interfaces
+
+Eine abstrakte Klasse besitzt mindestens eine abstrakte Methode. Es können keine Instanzen von dieser Klasse gebildet werden.
+
+```JAVA
+abstract class Eintritt {
+    // Attribute
+
+    // Konstruktor
+    Eintritt() {}
+
+    // Wir wissen nicht, welche Berechnung durchgeführt werden muss
+    abstract double berechnePreis();
+
+    String datenAusgeben() {
+        System.out.println("Eintritt für " + this.ort);
+    }
+}
+
+class KinoEintritt extends Eintritt {
+    // Konstruktor
+    KinoEintritt() {}
+
+    // Jetzt können wir den Preis berechnen
+    double berechnePreis() {
+        return ...
+    }
+}
+```
+
+Interfaces unterscheiden sich von Abstrakten Klassen darin, dass es keine implementierten Methoden gibt. Interfaces können keine Attribute, aber Konstanten definieren. Interfaces sind implizit Abstrkt, das Schlüsselwort `abstract` ist jedoch unnötig.
+
+```JAVA
+interface Sprache {
+    public String getBezeichnung();
+}
+
+class Deutsch implements Sprache {
+    // Bei Interfaces ist @override nicht nötig
+    public String getBezeichnung() {
+        return "Deutsch";
+    }
+}
+```
+
+Java kann nur von einer Klasse erben, aber beliebig viele Interfaces implementieren.
 
 ## Sichtbarkeit (Java, C++, C#, PHP)
 
