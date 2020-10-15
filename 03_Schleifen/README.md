@@ -7,18 +7,26 @@ Die Befehle in einer Schleife werden mehrfach ausgeführt.
 Die While-Schleife ist eine der kopfgesteuerten Schleifen, hier wird vor Schleifenbeginn die Bedingung geprüft. Die While-Schleife wird unter Umständen nicht ausgeführt.
 
 ```
+// Java
 initialisierung
 while (bedingung) {
     ...
     iteration
 }
+
+# Python
+initialisierung
+while bedingung:
+    ...
+    iteration
 ```
 
 ## DO WHILE
 
-Die Bedingung wird erst nach Abarbeiten des Schleifenrumpfes geprüft, dadurch wird sie mindestens einmal ausgeführt.
+Die Bedingung wird erst nach Abarbeiten des Schleifenrumpfes geprüft, dadurch wird sie mindestens einmal ausgeführt. Diese Schleife gibt es nicht in Python.
 
 ```
+// Java
 initialisierung
 do {
     ...
@@ -31,9 +39,21 @@ do {
 Kurzschreibweise der While-Schleife
 
 ```
+// Java
 for (initialisierung; bedingung; iteration) {
     ...
 }
+
+for (int i = 0; i < 10; i++) {
+    ...
+}
+
+# Python
+for var in iterierbar:
+    ...
+
+for i in range(10): # Erzeugt Bereich von 0 bis 9
+    ...
 ```
 
 ## FOREACH
