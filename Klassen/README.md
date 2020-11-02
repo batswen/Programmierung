@@ -138,6 +138,32 @@ test.grüßen()
 anderesObjekt = Test("Susi Sorglos")
 ```
 
+## Verwendung von Statischen Funktionen
+```JAVA
+class Person {
+    private String name;
+    private static int anzahlObjekte = 0;
+    Person(String name) {
+        this.name = name;
+        anzahlObjekte++;
+    }
+    public static int getAnzahlObjekte() {
+        return anzahlObjekte;
+    }
+}
+//...
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Person.getAnzahlObjekte()); // 0
+        Person p = new Person("Hans Wurst");
+        System.out.println(Person.getAnzahlObjekte()); // 1
+        Person p2 = new Person("Susi Sorglos");
+        System.out.println(Person.getAnzahlObjekte()); // 2
+    }
+}
+
+```
+
 ## Vererbung
 
 Vererbung bedeutet dass eine Klasse die Attribute und Methoden einer anderen Klasse erhält. Das ermöglicht es eine Basisklasse zu entwerfen die bereits alle gemeinsamen Informationen speichern kann. Soll das Erben vehindert werden, so muss die Klasse mit `final` deklariert werden.
