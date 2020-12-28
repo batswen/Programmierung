@@ -19,7 +19,7 @@ else:
     print("Falsch")
 
 
-# Den Bedingungsoperator gibt es in ähnlicher Form
+# Den Bedingungsoperator (manchmal auch "Ternärer Operator") gibt es in ähnlicher Form
 
 if b == 1:
     a = 1

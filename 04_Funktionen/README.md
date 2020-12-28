@@ -59,7 +59,15 @@ parameter_mit_vorgabe(1)    # x=1, y=0
 parameter_mit_vorgabe(x = 1)# x=1, y=0
 ```
 
-Funktionen in Python können jeden beliebigen Datentyp zurückgeben. Es sind also auch z. B. Arrays erlaubt. Wird vom Array nur ein bestimmter Index benötigt, so kann man Diesen an den Funktionsaufruf anhängen.
+Funktionen in Python können jeden beliebigen Datentyp zurückgeben. Es sind also auch z. B. Arrays erlaubt. Wird vom Array nur ein bestimmter Index benötigt, so kann man diesen an den Funktionsaufruf anhängen.
+
+```PYTHON
+def ret_array():
+    return [1, 2, 3]
+
+print(ret_array()) # gibt "[1, 2, 3]" aus, also das komplette Array
+print(ret_array()[1]) # gibt "2" aus - nur den zweiten Eintrag (Index: 1)
+```
 
 ```PYTHON
 def viele_ergebnisse():

@@ -26,8 +26,8 @@ public class If {
         }
 
         /*
-            Der Bedingungsoperator (oft fälschlich als Ternärer Operator bezeichnet, den
-            es z. B. in C++ gibt)
+            Der Bedingungsoperator (manchmal auch "Ternärer Operator", jedoch gibt es
+            in anderen Sprachen z. B. in C++ mehrere Ternäre Operatoren)
 
             Bedingung ? Wahr : Falsch
         */

@@ -6,6 +6,8 @@ while i < 10:
 print("Nach der While-Schleife, i: {}".format(i)i)
 
 
-#weiter = True
-#while weiter:
-#    print("Endlosschleife")
+# Wird die Bedingung nicht erfüllt, bricht die Schleifenausführung nie
+# ab, hierbei spricht man von einer Endlosschleife
+
+while True:
+    print("Endlosschleife")
